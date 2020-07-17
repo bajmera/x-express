@@ -19,7 +19,27 @@ on cmd prompt
 	and invoke npm install
 	
 	node_modules\.bin\tsc.cmd -init
-	node_modules\.bin\tslint.cmd –init (Create tslint.json)
-Modify package.json
+	node_modules\.bin\tslint.cmd --init 
+
+	Modify package.json
 To include script line
-	"start": "tsc && node dist/index.js"
+	"start": "tsc && node index.js"
+Create index.ts
+import express from 'express';
+const app = express();
+app.get('/', (req, res) => {
+  res.send('Hello World !!');
+});
+app.listen(3000, err => {
+  if (err) {
+    return console.error(err);
+  }
+  return console.log('server is listening on 3000');
+});
+
+
+Npm start
+Test from postman
+
+
+

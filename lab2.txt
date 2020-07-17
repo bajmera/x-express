@@ -1,0 +1,25 @@
+Lab 2 - Express Setup with TypeScript
+create a folder demo1
+on cmd prompt
+	npm init -y
+	Option 1- 
+		npm install --save-dev typescript@3.3.3
+		npm install --save-dev tslint@5.12.1
+		npm install --save express@4.16.4
+		npm install --save-dev @types/express@4.16.1
+	Option 2 - modify package.json to include 
+		"devDependencies": {
+			"@types/express": "^4.16.1",
+			"tslint": "^5.12.1",
+			"typescript": "^3.3.3"
+			},
+		"dependencies": {
+			"express": "^4.16.4"
+	}
+	and invoke npm install
+	
+	node_modules\.bin\tsc.cmd -init
+	node_modules\.bin\tslint.cmd –init (Create tslint.json)
+Modify package.json
+To include script line
+	"start": "tsc && node dist/index.js"

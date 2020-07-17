@@ -1,0 +1,25 @@
+Lab 1 - TypeScript
+  1. Create a Connection interface with open and close methods
+      open (url, login , password )--> password as optional parameter
+        -> console.log("method name , parameters...)
+  
+  2. Create two classes OracleConnection and SQLConnection implementing connection class
+  
+  3. Test the code 
+    
+  4 Create Emp (empno, ename, salary)
+    class Emp { 
+    empno: number;
+    ename: string
+    salary: number
+}
+  
+  5. Create EmpDAO class
+    constructor to accept Connection object
+    Variable - arr:Array<Emp> = new Array()
+    Methods
+      Insert - accept Emp object            -> con.open(); console.log("in insert"); con.close()
+      List - list the employees. 
+  
+  
+  
